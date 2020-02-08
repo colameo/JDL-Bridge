@@ -2,8 +2,9 @@
 
 ### Installation
   
-  - Follow [JHipster installation instructions](https://www.jhipster.tech/installation/)
+  1. Follow [JHipster installation instructions](https://www.jhipster.tech/installation/)
   
+  2. Use npm to install this utility
   ```
   $ npm install -g jdlbridge
   ```
