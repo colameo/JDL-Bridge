@@ -11,7 +11,7 @@
 ### Usage
 
   ```
-    Usage:
+    usage:
            jdlbridge [-puml] [-png] [-adoc] -f <file(s)>
 
     Options:
