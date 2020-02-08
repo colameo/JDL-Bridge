@@ -1,6 +1,6 @@
 # JDL-Bridge
 
-Installation:
+### Installation:
   
   - Follow [installation instruction of JHipster](https://www.jhipster.tech/installation/)
   
