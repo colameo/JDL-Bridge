@@ -20,6 +20,7 @@
      -adoc                     Generate an AsciiDoc for each JDL file
      -f,--jdlfiles <file(s)>   JDL files or folders separated by a space with
                                wildcards
+                               
     $ jdlbridge -f myApp/MyApp.jdl
     $ jdlbridge -f myApp/My*.jdl
     $ jdlbridge -f myApp/*.jdl
