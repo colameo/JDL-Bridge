@@ -17,8 +17,8 @@
 
     options:
      -puml                     Generate PlantUML for each JDL file
-     -png                      Generate PNG for each JDL file
-     -adoc                     Generate an AsciiDoc for each JDL file
+     -png                      Generate UML diagrams in PNG for each JDL file
+     -adoc                     Generate an AsciiDoc with PlantUML for each JDL 
      -f,--jdlfiles <file(s)>   JDL files or folders separated by a space with
                                wildcards
 
