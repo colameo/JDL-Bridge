@@ -13,15 +13,16 @@
 
   ```
     usage:
-           jdlbridge [-puml] [-png] [-adoc] -f <file(s)>
+       jdlbridge [-puml] [-png] [-adoc] [-f <file(s)>]
 
-    Options:
+    options:
      -puml                     Generate PlantUML for each JDL file
      -png                      Generate PNG for each JDL file
      -adoc                     Generate an AsciiDoc for each JDL file
      -f,--jdlfiles <file(s)>   JDL files or folders separated by a space with
                                wildcards
-                               
+
+    examples:
     $ jdlbridge -f myApp/MyApp.jdl
     $ jdlbridge -f myApp/My*.jdl
     $ jdlbridge -f myApp/*.jdl
