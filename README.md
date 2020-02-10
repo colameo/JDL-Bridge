@@ -13,19 +13,21 @@
 
   ```
     usage:
-       jdlbridge [-puml] [-png] [-adoc] [-f <file(s)>]
+           jdlbridge [-h] [-u] [-p] [-a] [-f <file(s)>]
 
     options:
-     -puml                     Generate PlantUML for each JDL file
-     -png                      Generate UML diagrams in PNG for each JDL file
-     -adoc                     Generate an AsciiDoc with PlantUML for each JDL 
-     -f,--jdlfiles <file(s)>   JDL files or folders separated by a space with
-                               wildcards
+     -h,--help                 Print this help message
+     -u,--uml                  Generate PlantUML file for each JDL file
+     -p,--png                  Generate UML diagrams in PNG for each JDL file
+     -a,--adoc                 Generate an AsciiDoc and PlantUML files for
+                               each JDL
+     -f,--jdlfiles <file(s)>   JDL file search pattern (wildcards allowed) or
+                               folders separated by a space
 
     examples:
-    $ jdlbridge -f myApp/MyApp.jdl
-    $ jdlbridge -f myApp/My*.jdl
-    $ jdlbridge -f myApp/*.jdl
-    $ jdlbridge -f myApp/
-    $ jdlbridge -f myApp/ myApp2/A*.jdl myApp3/*.jh
+    $ jdlbridge -u -f myApp/MyApp.jdl
+    $ jdlbridge -p -f myApp/My*.jdl
+    $ jdlbridge -a -f myApp/*.jdl
+    $ jdlbridge -a -f myApp/
+    $ jdlbridge -adoc -f myApp/ myApp2/A*.jdl myApp3/*.jh
    ```
