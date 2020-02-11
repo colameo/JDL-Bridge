@@ -20,7 +20,7 @@
  \____/|_____/|______/~~~~~~|**|~~~~~~~~|*|~~~~|_.__/|_|  |_|\__,_|\__, |\___|
                                                                     __/ |
                                                                    |___/
-JDLBridge v1.1.6 (c) Copyright 2019-2020 - JHipster Project - Serano Colameo
+JDLBridge (c) Copyright 2019-2020 - JHipster Project - Serano Colameo
 
 usage:
        jdlbridge [-h] [-s] [-u] [-p] [-a] [-f <file(s)>]
