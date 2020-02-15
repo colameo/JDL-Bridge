@@ -1,0 +1,91 @@
+/*
+ * This is the application and entity model for the 21-Points (https://github.com/mraible/21-points) application from Matt Raible 
+ */
+
+application {
+	/*
+	 * 21-Points Application Configuration
+	 */
+  config {
+    /* This applicatrion is a monolith */
+    applicationType monolith
+    /* This is the base name */
+    baseName HealthPoints 
+    /* This is the package name */
+    packageName com.okta.developer
+    /* We use Oauth2 Authentication here */
+    authenticationType oauth2
+    /* PostgreSQL is our DB */
+    prodDatabaseType postgresql
+    buildTool gradle
+    searchEngine elasticsearch
+    testFrameworks [protractor]
+    clientFramework react
+    useSass true
+    enableTranslation true
+    nativeLanguage en
+    languages [en, es]
+  }
+  /*
+  **
+  */
+  entities Points, BloodPressure, Weight, Preferences 
+}
+
+/*
+ * JDL definition for application 'TwentyOnePoints' generated with command 'jhipster export-jdl'
+ */
+entity BloodPressure {
+  timestamp ZonedDateTime required /* test */
+  systolic Integer required
+  diastolic Integer required
+}
+entity Weight {
+  timestamp ZonedDateTime required
+  weight Double required
+}
+entity Points {
+  date LocalDate required
+  exercise Integer
+  meals Integer
+  alcohol Integer
+  notes String maxlength(140)
+}
+entity Preferences {
+  /* Weekly goal */
+  weeklyGoal Integer required min(10) max(21) 
+  /* Weight units */
+  weightUnits Units required 
+}
+
+/**
+ * This Enum is for Units
+ */
+enum Units {
+  /* KG Enum */
+  KG 
+  /* LB Enum */
+  LB 
+}
+
+relationship OneToOne {
+  /* Link to Preference */
+  Preferences{user(login)} to User
+}
+
+relationship ManyToOne {
+  BloodPressure{user(login)} to User
+  Weight{user(login)} to User
+  Points{user(login)} to User
+}
+
+/*
+**
+*/
+paginate BloodPressure, Weight with infinite-scroll
+
+/*
+**
+*/
+paginate Points with pagination
+

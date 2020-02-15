@@ -42,3 +42,11 @@ $ jdlbridge -a -f myApp/*.jdl
 $ jdlbridge -a -f myApp/
 $ jdlbridge --adoc --jdlfiles myApp/ myApp2/A*.jdl myApp3/*.jh
 ```
+
+### Example
+```
+$ git clone https://github.com/colameo/JDL-Bridge.git
+$ cd JDL-Bridge
+$ jdlbridge -a -f examples/21-points.jh
+```
+
