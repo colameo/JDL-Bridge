@@ -79,13 +79,6 @@ relationship ManyToOne {
   Points{user(login)} to User
 }
 
-/*
-**
-*/
 paginate BloodPressure, Weight with infinite-scroll
-
-/*
-**
-*/
 paginate Points with pagination
 
