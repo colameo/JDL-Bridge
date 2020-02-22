@@ -3,9 +3,9 @@
  */
 
 application {
-	/*
-	 * 21-Points Application Configuration
-	 */
+   /*
+   ** 21-Points Application Configuration
+   */
   config {
     /* This applicatrion is a monolith */
     applicationType monolith
@@ -26,9 +26,6 @@ application {
     nativeLanguage en
     languages [en, es]
   }
-  /*
-  **
-  */
   entities Points, BloodPressure, Weight, Preferences 
 }
 
@@ -36,7 +33,7 @@ application {
  * JDL definition for application 'TwentyOnePoints' generated with command 'jhipster export-jdl'
  */
 entity BloodPressure {
-  timestamp ZonedDateTime required /* test */
+  timestamp ZonedDateTime required 
   systolic Integer required
   diastolic Integer required
 }
