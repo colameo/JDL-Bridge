@@ -1,3 +1,5 @@
 /dist/
 .project
 /jar/
+**.adoc
+**.plantuml
