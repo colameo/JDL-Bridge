@@ -1,4 +1,4 @@
-[_metadata_:hash]: "ec7019726e6d635c1be08e9ec8891c6fe73aeaf4d01a3c579ea4c649043f119e"
+[_metadata_:hash]: ec7019726e6d635c1be08e9ec8891c6fe73aeaf4d01a3c579ea4c649043f119e
 # JDL-Bridge
 
 ### Installation
